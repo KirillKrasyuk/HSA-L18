@@ -74,3 +74,14 @@ START SLAVE;
 
 SHOW SLAVE STATUS;
 ```
+
+### Modifications
+
+```sql
+ALTER TABLE test ADD test_1 varchar(255) null;
+```
+
+Run on slave
+```sql
+ALTER TABLE test DROP COLUMN test_1;
+```
