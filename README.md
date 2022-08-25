@@ -3,7 +3,7 @@
 ```text
 [mysqld]
 server-id = 1
-log_bin = /var/log/mysql/mysql-bin.log
+log-bin = mysql-bin
 binlog_do_db = db
 ```
 
